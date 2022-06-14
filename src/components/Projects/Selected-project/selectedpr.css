@@ -1,0 +1,169 @@
+.selected-pr{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(56, 56, 56, 0.516);
+	z-index: 1;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.selected-pr__container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background: linear-gradient(90deg, rgb(241, 235, 77) 0%,  rgb(255, 179, 0) 100%);
+	max-width: 600px;
+	padding: 25px;
+	border-radius: 40px;
+	font-size: 20px;
+	
+}
+.selected-pr__descrition{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.selected-pr__descrition span{
+	font-weight: 600;
+}
+.selected-pr__descrition p{
+	font-size: 18px;
+	font-weight: 400;
+	color: #383737;
+	word-break: break-all;
+}
+.selected-pr__deadline{
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	margin-left: 7px;
+}
+.selected-pr__deadline-subtitle{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-right: 10px;
+}
+.selected-pr__deadline span{
+	font-weight: 600;
+	font-size: 20px;
+}
+.selected-pr__instruments{
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	display: flex;
+	gap: 5px;
+}
+.selected-pr__instruments svg:hover{
+	cursor: pointer;
+	transition: all 0.1s ease;
+	color: #fb7938c8;
+}
+.selected-pr__title{
+	display: flex;
+	align-self: center;
+	align-items: center;
+	margin-top: 20px;
+}
+.selected-pr__title svg{
+	margin-top: 5px;
+	margin-right: 10px;
+}
+.selected-pr__descrition-subtitle{
+	display: flex;
+	align-items: center;
+	
+}
+.selected-pr__descrition-subtitle svg{
+	margin-right: 10px;
+}
+.selected-pr__author{
+	display: flex;
+	align-items: center;
+}
+.selected-pr__author svg{
+	font-size: 36px;
+	margin-right: 10px;
+}
+.selected-pr__author span{
+	font-weight: 400;
+	margin: 5px;
+}
+
+@keyframes showSelectPr {
+	0%{
+		opacity: 0;
+		transform: scale(0.1);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+
+.selected-pr__container.entered{
+	animation: showSelectPr 0.3s forwards
+}
+
+
+
+/* edit project */
+
+.selected-pr__title-input{
+	font-family: inherit;
+	font-size: 22px;
+	font-weight: 700;
+	width: 100%;
+	border: none;
+	background-color: white;
+	outline: none;
+	padding: 5px;
+	width: 150px;
+}
+
+.selected-pr__textarea{
+	font-family: inherit;
+	font-size: 18px;
+	margin-top: 10px;
+	padding: 5px;
+	max-width: 600px;
+	width: 600px;
+	height: 150px;
+	border: none;
+	outline: none;
+	background-color: white;
+}
+.selected-pr__textarea::-webkit-scrollbar{
+	color: yellow;
+}
+.selected-pr__deadline-input{
+	font-family: inherit;
+	font-size: 18px;
+	padding: 5px;
+	background-color: white;
+	border: none;
+}
+
+.selected-pr__save-btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+.selected-pr__save-btn button{
+	font-family: inherit;
+	font-size: 16px;
+	border: 1px solid black;
+	border-radius: 40px;
+	padding: 10px 15px 10px 15px;
+	transition: all 0.2s ease;
+}
+.selected-pr__save-btn button:hover{
+	cursor: pointer;
+	color: #fb7938c8;
+	border: 1px solid #fb7938c8;
+}

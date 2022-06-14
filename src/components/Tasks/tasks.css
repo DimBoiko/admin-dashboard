@@ -1,0 +1,33 @@
+.tasks__info{
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 45px 0px 90px;
+	font-size: 14px;
+	color: gray;
+}
+.tasks__info span:nth-child(2){
+	padding-left: 120px;
+	padding-right: 20px;
+}
+.tasks__create-task{
+	padding: 15px;
+	padding-top: 0px;
+}
+.tasks__create-task button{
+	width: 100%;
+	font-size: 22px;
+	border-radius: 30px;
+	padding: 10px 0px 10px 0px;
+	background: transparent;
+	border: 1px solid black;
+	transition: all 0.3s ease;
+	outline: none;
+	cursor: pointer;
+}
+.tasks__create-task button:hover{
+	color: rgb(244, 100, 48);
+	border: 1px solid rgb(244, 100, 48);
+	box-shadow: 0px 0px 4px 1px rgba(244, 100, 48, 0.227);
+}
+
+

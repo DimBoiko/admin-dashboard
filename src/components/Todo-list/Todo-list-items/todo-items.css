@@ -1,0 +1,25 @@
+.todolist__items{
+	max-height:120px;
+	overflow:auto;
+
+	display: flex;
+	flex-direction: column;
+	transform: translate(0px);
+	opacity: 0;
+}
+
+@keyframes showTodos {
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}
+.todolist__items.entered{
+	animation: showTodos 0.3s forwards
+}
+.todolist__items.exited{
+	animation: showTodos 0.3s forwards
+}

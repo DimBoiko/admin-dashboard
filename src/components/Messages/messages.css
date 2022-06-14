@@ -1,0 +1,40 @@
+.messages{
+	display:flex;
+	flex-direction:column;
+	gap:8px;
+	padding-top: 8px;
+}
+.message{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 20px;
+	background-color: rgba(240, 240, 162, 0.596);
+	padding: 5px 10px 5px 10px;
+	margin: 0px 5px 0px 5px;
+}
+.message-user-info{
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+	gap: 5px;
+}
+.message-body{
+	display: flex;
+	justify-content: space-between;
+}
+.massage-user-logo{
+	width: 30px;
+	height: 30px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+}
+.massage-user-logo svg{
+	font-size: 20px;
+}
+.message-text{
+	padding: 5px;
+}

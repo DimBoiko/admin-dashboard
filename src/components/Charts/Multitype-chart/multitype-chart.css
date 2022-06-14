@@ -1,0 +1,24 @@
+.multitype{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin-top: 30px;
+	padding: 20px;
+	border-radius: 20px;
+	background: linear-gradient(90deg, rgb(241, 235, 77) 0%,  rgba(255, 179, 0, 0.784) 100%);
+}
+.multitype-chart {
+	max-width: 900px !important;
+	max-height: 300px !important;
+}
+
+@media (max-width:1600px) {
+	.multitype-chart{
+		display:flex !important;
+		max-width: 800px !important;
+		max-height: 250px  !important;
+	}
+	.multitype{
+		max-width: 800px;
+	}
+}

@@ -1,0 +1,67 @@
+.user-info{
+	max-width: 280px;
+	gap: 13px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	background: linear-gradient(90deg, rgb(241, 235, 77) 0%,  rgba(255, 179, 0, 0.784) 100%);
+	padding: 10px;
+	border-radius: 20px;
+	box-shadow: 3px 4px 10px 2px rgba(0, 0, 0, 0.143);
+
+	transition: all 0.3s ease;
+}
+.user-info:hover{
+	box-shadow: 0px 0px 10px 2px rgba(244, 199, 20, 0.561);
+
+}
+.user-info__info{
+	display: flex;
+	flex-direction: column;
+}
+.user-info__logo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 10px;
+	border-radius: 50%;
+	background-color: rgba(144, 144, 144, 0.6);
+}
+.user-info__logo>svg{
+	width: 25px;
+	height: 25px;
+}
+.user-info__fullname{
+	font-size: 18px;
+	font-family: Robot,sans-serif;
+	font-weight: 600;
+	line-height: 28px;
+}
+.user-info__profession{
+	color: rgba(108, 103, 103, 0.808);
+	font-family: Robot,sans-serif;
+}
+.user-info__message-info{
+	position: relative;
+	background-color: yellow;
+	padding: 5px;
+	border-radius: 50%;
+}
+.message-count{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 0px;
+
+	right: -5px;
+	bottom: -6px;
+	background-color: rgb(244, 100, 48);
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+}

@@ -1,0 +1,64 @@
+.todo-modal{
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(56, 56, 56, 0.516);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.project-modal__body-inputs{
+	display: flex;
+	gap: 50px;
+}
+.todo-modal__body{
+	max-width: 500px;
+	min-height: 150px;
+	background: linear-gradient(90deg, rgb(241, 235, 77,1) 0%,  rgba(255, 179, 0, 1) 100%);
+	border-radius: 20px;
+	padding: 50px;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+	position: relative;
+}
+.todo-modal__body h4{
+	font-size: 22px;
+}
+.todo-modal__body input{
+	font-family: inherit;
+	font-size: 16px;
+	padding: 7px;
+	width: 100%;
+	border:none;
+	border-radius: 30px;
+}
+.todo-modal__body button{
+	font-family: inherit;
+	font-size: 16px;
+	padding: 8px 12px;
+	border-radius: 30px;
+	border: none;
+	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.919);
+	cursor: pointer;
+	transition: all 0.2s ease;
+	background: white;
+}
+.todo-modal__body button:hover{
+	box-shadow: 0px 0px 1px 1px rgb(244, 100, 48);
+	color: rgb(244, 100, 48);
+}
+
+.close-modal{
+	position: absolute;
+	right: 10%;
+	top: 8%;
+	font-size: 28px;
+	cursor: pointer;
+}

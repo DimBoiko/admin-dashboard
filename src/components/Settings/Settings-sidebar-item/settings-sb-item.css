@@ -1,0 +1,44 @@
+.settings__sidebar-item{
+	display: flex;
+	align-items: center;
+	max-height: 24px;
+	margin: 0px 0px 10px 0px;
+	gap: 5px;
+	transition: all 0.1s ease;
+}
+.settings__sidebar-item:hover{
+	background-color: #fb7938b8;
+	border-radius: 20px;
+	border-top-left-radius: 0px;
+}
+.settings__sidebar-item label{
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.92);
+}
+.item-hidden-input{
+	position: absolute;
+	opacity: 0;
+	width: 24px;
+	height: 22px;
+	z-index: 1;
+	cursor: pointer;
+}
+.item-fake-input{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	background-color: #ffffff;
+	border: 2px solid #fb7938c8;
+	overflow: hidden;
+	
+}
+.item-hidden-input:checked+.item-fake-input::after{
+	content: '✓';
+	color: #fb7938c8;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 0px;
+}

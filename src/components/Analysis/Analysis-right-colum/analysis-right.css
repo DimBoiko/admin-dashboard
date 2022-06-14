@@ -1,0 +1,35 @@
+.analysis-right-colum{
+	max-height: 850px;
+	margin-top:50px;
+	display: flex ;
+	flex-direction: column ;
+	align-items: center ; 
+	justify-content: space-between;
+
+}
+@media (max-width:1600px) {
+	.analysis-right-colum{
+		max-width: 350px;
+		margin-top:20px;
+		margin-right: 12px;
+	}
+}
+@media (max-width:1175px) {
+	.analysis{
+		padding: 10px;
+	}
+	.analysis-right-colum{
+		max-width: 320px;
+		max-height: 700px;
+		margin-top:20px;
+	}
+	.analysis-right-colum .eventchart{
+		max-width: 300px;
+		max-height: 150px;
+	}
+	.analysis-right-colum .eventchart canvas{
+		max-width: 300px;
+		max-height: 150px;
+	}
+}
+

@@ -1,0 +1,68 @@
+.week-calendar{
+	position: relative;
+	display: flex;
+	align-items: center;
+	max-width: 345px;
+
+}
+.react-calendar__month-view__weekdays{
+	display: none !important;
+	
+}
+.react-calendar__month-view {
+	display: flex;
+	justify-content: flex-start !important;
+	margin-top: 10px;
+	
+
+}
+.react-calendar__month-view__days{
+	max-width: 273px;
+	display: flex;
+	flex-wrap: nowrap !important;
+	justify-self: flex-start;
+	overflow: hidden;
+	gap: 5px;
+}
+.react-calendar__month-view__days button{
+	margin: 3px;
+	padding: 16px 40px 16px 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	background: white;
+	transition:all 0.3s ease;
+}
+
+.react-calendar__month-view__weekdays{
+	display: none;
+}
+.react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day--weekend{
+	margin-left: 2px !important;
+}
+.react-calendar__tile{
+	font-size: 16px;
+	font-weight: 500;
+	font-family: inherit;
+}
+
+.react-calendar__month-view__days button:hover{
+	color: rgb(244, 100, 48);
+}
+.arrow{
+	font-size: 26px;
+	cursor: pointer;
+}
+.arrow.next{
+	transform: rotate(180deg);
+}
+.transform-forward{
+	transform: translate(100px);
+}
+.react-calendar__tile--active{
+	box-shadow: 0px 0px 1px 2px rgb(244, 100, 48);
+	color: rgb(244, 100, 48);
+}

@@ -1,0 +1,111 @@
+.chat{
+	background-color: white;
+	max-height: 780px;
+	margin-top: 20px;
+	border-radius: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.201);
+	overflow: hidden;
+}
+
+.chat__user{
+	font-family: Roboto,sans-serif;
+	display: flex;
+	align-items: center;
+	line-height: 22px;
+	background: linear-gradient(90deg, rgb(241, 235, 77) 0%,  rgba(255, 179, 0, 0.784) 100%);
+	border-top-right-radius: 38px;
+	border-top-left-radius: 38px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+.chat__user-info{
+	display: flex;
+	flex-direction: column;
+	margin-left: 8px;
+	
+}
+.user-name{
+	font-weight: 600;
+	font-size: 22px;
+}
+.user-position{
+	color: rgba(108, 103, 103, 0.808)
+}
+.user-logo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 30px;
+
+	padding: 10px;
+	border-radius: 50%;
+	background-color: rgba(144, 144, 144, 0.6);
+}
+.chat__input{
+	padding: 10px;
+	background: linear-gradient(90deg, #f1eb4d 0%,  #ffb300c8 100%);
+	color: #fb7938c8;
+}
+.chat__input-container{
+	display: flex;
+	align-items: center;
+	background-color: white;
+	max-width: fit-content;
+	border-radius: 40px;
+}
+.chat__input-container span{
+	cursor: pointer;
+}
+.chat__input-container input{
+	font-size: 20px;
+	padding: 20px;
+	border: none;
+	outline: none;
+	border-radius: 40px;
+	transition: all 0.3s ease;
+	width: 300px;
+}
+.chat__input-container svg{
+	width: 35px;
+	height: 35px;
+}
+.profile__user-name{
+	font-size: 24px;
+	font-weight: 600;
+}
+
+@media (max-width:730px) {
+	.chat{
+		min-height: 95%;
+		max-height: 715px;
+		margin-right: 15px;
+		margin-top: 0px !important;
+		margin-bottom: 45px !important;
+	}
+	.chat__input-container input{
+		font-size: 14px;
+		height: 20px;
+		width: 215px;
+		padding: 10px !important;
+	}
+	.chat__input-container svg{
+		width: 30px;
+		height: 30px;
+	}
+	.message-text{
+		word-break: break-all;
+	}
+}
+@media (max-width:580px) {
+	.chat__user{
+		min-height: 80px;
+		padding: 20px;
+	}
+	.chat{
+		min-width: 100%;
+	}
+}

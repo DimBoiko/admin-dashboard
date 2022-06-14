@@ -1,0 +1,125 @@
+.profile{
+	max-height: 780px;
+	margin-top: 22px;
+	background-color: white;
+	border-radius: 40px;
+	box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.258);
+	overflow-y: auto;
+}
+.profile__user{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	background: linear-gradient(90deg, rgb(241, 235, 77) 0%,  rgba(255, 179, 0, 0.784) 100%);
+}
+.profile__user-logo{
+	background-color: rgba(144, 144, 144, 0.6);
+	padding: 20px;
+	margin-right: 5px;
+	border-radius: 50%;
+}
+.profile__user-logo svg{
+	width: 40px;
+	font-size: 38px;
+}
+.profile__user-info{
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+.status-online{
+	width: 12px;
+	height: 12px;
+	background-color: rgb(62, 238, 18);
+	border-radius: 50%;
+	box-shadow: 0px 0px 10px 0px rgb(62, 238, 18);
+	margin-right: 5px;
+}
+.profile__user-status{
+	display: flex;
+	align-items: center;
+	color: rgb(92, 83, 83);
+	font-size: 14px;
+	margin-top: 10px;
+}
+.profile__user-position{
+	color: rgba(108, 103, 103, 0.808)
+}
+@media (max-width:1000px) {
+	.new-task{
+		display: flex;
+		flex-direction: column;
+		padding: 5px;
+		gap: 10px;
+	}
+}
+@media (max-width:780px) {
+	.task{
+		font-size: 14px;
+	}
+
+	.profile{
+		overflow: auto;
+		min-height: 95%;
+	}
+	.tasks__info{
+		display: none;
+	}
+	.new-task{
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+}
+@media (max-width:780px) {
+	.task{
+		padding: 15px;
+		font-size: 12px;
+	}
+
+	.profile{
+		overflow: auto;
+		min-height: 95%;
+	}
+	.tasks__info{
+		display: none;
+	}
+	.new-task{
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+}
+@media (max-width:580px) {
+	.task{
+		font-size: 14px;
+		padding: 20px;
+	}
+	.profile{
+		max-height: 100%;
+		min-width: 100%;
+		margin-top: 0px;
+		margin-bottom: 42px;
+		margin-right: 15px;
+	}
+
+}
+@media (max-width:380px) {
+	.profile__user-logo{
+		padding: 5px;
+	}
+	.profile__user-name{
+		font-size: 20px;
+	}
+	.profile__user-info{
+		font-size: 14px;
+	}
+	.task{
+		font-size: 12px;
+		padding: 10px;
+	}
+	.tasks__create-task button{
+		padding: 2px ;
+	}
+}
+

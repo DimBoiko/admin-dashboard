@@ -1,0 +1,64 @@
+.project{
+	position: relative;
+	max-width: 440px;
+	padding: 20px;
+	border-radius: 40px;
+	overflow: hidden;
+	margin: 8px;
+	margin-top: 0px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	background: linear-gradient(90deg, rgb(241, 235, 77) 0%,  rgba(255, 179, 0, 0.784) 100%);
+	box-shadow:2px 2px 10px 1px rgba(0, 0, 0, 0.114);
+}
+.project:hover{
+	box-shadow: 0px 0px 10px 1px rgb(255, 208, 0);
+}
+
+.project__container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 130px;
+	color:rgb(58, 58, 58);
+}
+.project__container span{
+	font-size: 15px;
+}
+.project__title{
+	display: flex;
+	font-size: 20px;
+}
+.project__desrp{
+	font-weight: 600;
+	font-size: 16px !important;
+}
+.project__body{
+	max-height: 20px;
+	overflow: hidden;
+}
+.project__dln{
+	font-weight: 600;
+	font-size: 16px !important;
+}
+.project__deadline{
+	align-self: flex-start;
+}
+.pr-icon svg{
+	font-size: 36px;
+	margin-right: 5px;
+}
+
+@media (max-width:780px) {
+	.project__body{
+		align-self: flex-start;
+	}
+	.project{
+		width: 100%;
+	}
+
+}
+@media (max-width:580px) {
+	
+}

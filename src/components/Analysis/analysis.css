@@ -1,0 +1,123 @@
+.analysis{
+	margin-top:20px;
+	padding: 20px;
+}
+.analysis__mobile{
+	display: none;
+}
+.analysis__charts-row {
+	max-width: 1000px;
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+
+}
+.analysis__charts-row div{
+	max-width: 620px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+}
+.analysis__charts-row canvas{
+	width: 620px !important;
+}
+
+@media (max-width:1600px) {
+	.analysis{
+		max-width: 900px;
+	}
+	.analysis__charts-row{
+		display: flex;
+		align-items: center;
+		max-width: 800px !important;
+		gap: 10px;
+	}
+	.doughnut canvas{
+		width: 250px !important;
+	}
+	.line-chart{
+		height: 100%;
+	}
+	.line-chart canvas{
+		width: 500px !important;
+		height: 250px !important;
+	}
+}
+
+@media (max-width:1400px) {
+	.analysis{
+		max-width: 650px;
+	}
+	.analysis__charts-row{
+		display: flex;
+		align-items: center;
+		max-width: 600px !important;
+		gap: 10px;
+	}
+	.analysis .doughnut canvas{
+		width: 200px !important;
+	}
+	.line-chart{
+		height: 100%;
+	}
+	.line-chart canvas{
+		width: 400px !important;
+		height: 200px !important;
+	}
+}
+@media (max-width:1175px) {
+	.analysis{
+		max-width: 500px;
+	}
+	.analysis__charts-row{
+		display: flex;
+		max-width: 400px !important;
+		gap: 10px;
+	}
+	.analysis__charts-row .doughnut{
+		width: 150px !important;
+	}
+
+	.line-chart canvas{
+		width: 300px !important;
+		height: 150px !important;
+	}
+}
+
+@media (max-width:990px) {
+	.analysis{
+		display: flex;
+		flex-direction: column;
+		margin-top: 0px;
+		padding-top: 0px !important;
+	}
+	.analysis__desktop{
+		display: none;
+	}
+	.analysis-right-colum{
+		display: none !important; 
+	}
+	.analysis__mobile{
+		position: absolute;
+		top: 5%;
+		left: 55%;
+		transform: translateX(-50%);
+		display: block !important;
+	}
+}
+@media (max-width:580px) {
+	.analysis__mobile{
+		position: static;
+		transform: translateX(0px);
+	}
+	
+}
+@media (max-height:690px) {
+	.map{
+		display: none;
+	}
+	.analysis-right-colum{
+		max-height: 500px !important;
+	}
+}

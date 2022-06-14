@@ -1,0 +1,38 @@
+.todolist__item{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgb(180, 252, 125);
+	padding: 7px;
+	margin: 4px;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+
+}
+.todolist__item-body{
+	font-weight: 500;
+	margin-left: 10px;
+	display: flex;
+	align-items: center;	
+
+}
+.remove__item{
+	font-size: 24px;
+	cursor: pointer;
+}
+.todo-complete{
+	position: relative;
+
+	width: 25px;
+	height: 25px;
+	background-color: rgb(99, 207, 99);
+	margin-right: 8px;
+	border-radius: 50%;
+}
+.todo-complete svg{
+	position: absolute;
+	top: 2px;
+	left: 2.5px;
+	font-size: 20px;
+}
