@@ -1,6 +1,6 @@
 # Admin-dashboard
 
-This application is essentially a CPM system with the ability to manage a project with a small team
+This application is essentially a CRM system with the ability to manage a project with a small team
 The following technologies were used to create:
 
 - React
